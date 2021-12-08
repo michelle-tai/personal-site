@@ -1,0 +1,43 @@
+#logo {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+.nav a {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.nav a div:hover,
+.nav a div.active {
+  background-color: black;
+  color: white;
+}
+
+.nav a div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  /* max-width: 10em;
+    min-width: 7em; */
+  width: 100%;
+  min-width: 80px;
+  height: 3em;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+#about,
+#work,
+#exp {
+}
