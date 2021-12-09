@@ -22,5 +22,12 @@
 
 .bodyContent {
   margin: auto;
-  max-width: 45em;
+  max-width: 37em;
+  padding: 0 1em 1em 1em;
+}
+
+#idColorify {
+  right: 0;
+  bottom: 0;
+  position: fixed;
 }

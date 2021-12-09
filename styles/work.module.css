@@ -1,0 +1,11 @@
+#rightBg {
+  right: 0;
+  top: 200px;
+  position: fixed;
+}
+
+#leftBg {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}

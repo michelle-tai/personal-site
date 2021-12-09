@@ -52,9 +52,94 @@
 }
 
 .headingH1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .headingH2 {
   font-size: 1.5rem;
+}
+
+.homeContainer {
+  height: 93vh;
+  flex-direction: column;
+}
+
+.homeMainContent {
+  text-align: center;
+  /* height: 80vh; */
+  /* height: 500px; */
+  /* border: 3px solid black;  */
+}
+
+/***** SVG *****/
+.svgTL {
+  left: 0;
+  top: 0;
+}
+
+.svgTR {
+  right: 0;
+  top: 0;
+}
+
+.svgBR {
+  right: 0;
+  bottom: 0;
+}
+
+.svgBL {
+  left: 0;
+  bottom: 0;
+}
+
+.headingDiv {
+  /* left: 100;
+  bottom: 100; */
+  position: relative;
+  width: 215px;
+  height: 37px;
+  left: 25px;
+  top: 80px;
+}
+
+.whiteBackground {
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.roundedCorners {
+  border-radius: 20px;
+}
+
+/* SVG */
+/* svg {
+  position: absolute;
+  z-index: -1;
+} */
+
+.svg-show {
+  /* display: block; */
+  -webkit-animation: fadeInFromNone 0.5s ease-out;
+  -moz-animation: fadeInFromNone 0.5s ease-out;
+  -o-animation: fadeInFromNone 0.5s ease-out;
+  animation: fadeInFromNone 0.5s ease-out;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }

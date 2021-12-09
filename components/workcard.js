@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./workcard.module.css";
 import Image from "next/image";
+import utilStyle from '../styles/utils.module.css'
 
 export default function WorkCard(props){
   // console.log(title + " " + image + " " + company);
@@ -11,7 +12,7 @@ export default function WorkCard(props){
           <div className={"container-fluid justify-content-center " + styles.workCard}>
             <div className="ps-1 pe-1">
               <div className="row pt-3">
-                <Image src={props.image} width="500" height="500" responsive="true"/>
+                <Image className={utilStyle.roundedCorners} src={props.image} width="500" height="500" responsive="true"/>
               </div>
               <div className={"row mt-2 " + styles.workCardHeader}>
                 {props.title}

@@ -16,7 +16,7 @@ body {
   margin: auto;
   /* color: white; */
   /* line-height: 1.2; */
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 html {
@@ -103,6 +103,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   font-family: "Montserrat", sans-serif;
+  /* padding-top: 1em; */
 }
 nav a {
   text-decoration: none;

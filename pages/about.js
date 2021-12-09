@@ -1,23 +1,38 @@
 import Layout from "../components/layout"
 import utilStyles from '../styles/utils.module.css'
+import aboutStyles from "../styles/about.module.css"
 
 export default function About(){
     return (
+        <>
+        <svg className={utilStyles.svgTL} width="311" height="149" viewBox="0 0 311 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M310 -24.5482C314.785 -103.224 92.0299 -129.772 -30.9552 -127.909C-70.4301 -96.9298 -138.863 -6.91309 -96.7942 105.319C-85.8744 134.451 45 153.451 133.5 146.951C182.952 143.319 300 139.874 310 -24.5482Z" fill="#FFEDF5"/>
+        </svg>
+        <svg className={utilStyles.svgBR} id={aboutStyles.bottomRight} width="438" height="520" viewBox="0 0 438 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M112.358 710.136C292.627 683.847 440.734 571.546 507.28 417.53C543.232 334.322 652.786 -32.7891 487.401 2.82562C261.077 51.5634 239.943 103.013 80.3769 357.327C7.48763 473.497 -67.9115 736.426 112.358 710.136Z" fill="#FFEDF5"/>
+        </svg>
+
         <Layout>
-        <div className="ps-sm-5 pe-sm-5 mb-sm-5 m-auto mt-4">
-            <h1 className={"mb-3 " + utilStyles.headingH1}>About</h1>
+        <div>
+            <div>
+                <svg className={utilStyles.headingDiv} width="215" height="37" viewBox="0 0 215 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="215" height="37" fill="#FFEDF5"/>
+                </svg>
+                <h1 className={"mb-3 " + utilStyles.headingH1}>About</h1>
+            </div>
+            
             <div className="mb-4">
                 <p>
                     Okay, my name isn’t actually "memeshell" or "meme", but that’s a nickname my friends call me. 
                 </p>
-                <p>
+                <div>
                     My real name is <strong>Michelle Tai</strong>, and when I’m not busy dying from my engineering classes or lack of sleep (yes, despite my love for napping), you can find me: 
                     <ul>
                         <li>running after my foster kittens</li>
                         <li>feeding Dunn too many treats at the Duke Puppy Kindergarten</li>
                         <li>or making some sort of handcraft</li>
                     </ul>
-                </p>
+                </div>
             </div>
             
             <div className="mb-4">
@@ -50,5 +65,6 @@ export default function About(){
             </div>
         </div>
         </Layout>
+        </>
     )
 }

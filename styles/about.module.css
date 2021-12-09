@@ -1,0 +1,18 @@
+#aboutID {
+  /* background-color: pink; */
+  /* background-position: 25% 75%; */
+  /* background-position: bottom -10px right 20px; */
+
+  position: relative;
+  width: 215px;
+  height: 37px;
+  left: 30px;
+  top: -60px;
+  z-index: -1;
+
+  background: #ffedf5;
+}
+
+#bottomRight {
+  position: fixed;
+}
