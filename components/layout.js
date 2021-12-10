@@ -1,17 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+import styles from '../styles/layout.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import Link from 'next/link'
 import Navbar from './navbar'
-import Script from 'next/script'
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 import UIContext from './colorContext'
 
-const name = 'Your Name'
 export const siteTitle = 'meme.'
-
 
 export default function Layout({ children, home }) {
   const {colorify, setColorify} = useContext(UIContext);
@@ -42,6 +36,7 @@ export default function Layout({ children, home }) {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle}</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta
@@ -54,7 +49,7 @@ export default function Layout({ children, home }) {
       </Head>
       {home ? <></> : <Navbar className="position-absolute top-0 start-0"/>}
       
-      <main className={`${styles.bodyContent}`}>{children}</main>
+      <main>{children}</main>
       <div id={styles.idColorify} className="d-flex flex-row-reverse">
             <div className="form-check form-switch p-3">
               <input className="form-check-input" type="checkbox" role="switch" id="colorifyToggle" onClick={toggleClick}/>

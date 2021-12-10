@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link'
-import styles from './navbar.module.css'
+import styles from '../styles/navbar.module.css'
 import Navigation from './navigation'
 
 export default function Navbar(){

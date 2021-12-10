@@ -3,12 +3,28 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Navigation from '../components/navigation'
-
+import homeStyle from '../styles/home.module.css'
+import { useContext, useEffect } from 'react'
+import UIContext from '../components/colorContext'
 
 export default function Home() {
   // console.log(allProjectsData)
+  const {colorify, setColorify} = useContext(UIContext);
+  useEffect(() => {
+    addStyling(colorify);
+  })
+  
+  const addStyling = (colorify) => {
+    let memeshellHeader = document.getElementById("memeshellID");
+    if(colorify){
+      memeshellHeader.classList.add(homeStyle.memeshell);
+    } else {
+      memeshellHeader.classList.remove(homeStyle.memeshell);
+    }
+  }
     return (
     <Layout home>
+      <div className={`${utilStyles.bodyContent}`}>
         <svg className={utilStyles.svgTL} width="596" height="440" viewBox="0 0 596 440" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M595 -15C595 -171.091 140.047 -77.4114 -16.4296 -73.7227C-66.6544 -12.3733 -152.525 84.7444 -99.0001 307C-45.4753 529.256 290.748 419.639 397 348C452.846 299.464 595 141.091 595 -15Z" fill="#FFEDF5" stroke="white"/>
         </svg>
@@ -27,7 +43,7 @@ export default function Home() {
             <main className={`container d-flex ${utilStyles.homeMainContent}`}>
               <div className={`col align-self-center`}>
                 <div className={`row align-items-center mb-3`}>
-                    <h1 className={utilStyles.headingH1}>Hi, I'm <span>memeshell</span>.</h1>
+                    <h1 className={utilStyles.headingH1}>Hi, I'm <span style={{position: "relative"}}><span id="memeshellID">memeshell</span></span>.</h1>
                 </div>
                 <div className="row align-items-center mb-3">
                     <p>
@@ -40,6 +56,7 @@ export default function Home() {
             </main>
           </div>
         </div>
+      </div>
     </Layout>
   )
 }

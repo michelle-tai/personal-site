@@ -1,0 +1,44 @@
+.memeshell:hover {
+  color: #e8f1ff;
+}
+
+.memeshell:hover::after {
+  position: absolute;
+  color: black;
+  content: "memeshell";
+  right: 5px;
+  bottom: 15px;
+  /* -webkit-animation: hoverUp 0.5s ease-out;
+  -moz-animation: hoverUp 0.5s ease-out;
+  -o-animation: hoverUp 0.5s ease-out;
+  animation: hoverUp 0.5s ease-out; */
+}
+
+#hover:hover {
+  -webkit-animation: hoverUp 0.5s ease-out;
+  -moz-animation: hoverUp 0.5s ease-out;
+  -o-animation: hoverUp 0.5s ease-out;
+  animation: hoverUp 0.5s ease-out;
+}
+
+@keyframes hoverUp {
+  from {
+    right: 0;
+    /* display: none;
+    opacity: 0; */
+  }
+
+  /* 1% {
+    display: block;
+    opacity: 0;
+  } */
+
+  to {
+    right: 5px;
+    bottom: 15px;
+  }
+}
+
+#te:hover {
+  color: lavender;
+}

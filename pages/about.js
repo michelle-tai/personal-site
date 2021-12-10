@@ -1,8 +1,23 @@
 import Layout from "../components/layout"
 import utilStyles from '../styles/utils.module.css'
 import aboutStyles from "../styles/about.module.css"
+import { useContext, useEffect } from 'react'
+import UIContext from '../components/colorContext'
 
 export default function About(){
+    const {colorify, setColorify} = useContext(UIContext);
+    useEffect(() => {
+        addStyling(colorify);
+    })
+
+    const addStyling = (colorify) => {
+        let memeshellHeader = document.getElementById("aboutHeaderID");
+        if(colorify){
+            memeshellHeader.classList.add(aboutStyles.aboutHeader);
+        } else {
+            memeshellHeader.classList.remove(aboutStyles.aboutHeader);
+        }
+    }
     return (
         <>
         <svg className={utilStyles.svgTL} width="311" height="149" viewBox="0 0 311 149" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,12 +28,12 @@ export default function About(){
         </svg>
 
         <Layout>
-        <div>
-            <div>
-                <svg className={utilStyles.headingDiv} width="215" height="37" viewBox="0 0 215 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className={`${utilStyles.bodyContent}`}>
+            <div className="mt-sm-4">
+                {/* <svg className={utilStyles.headingDiv} width="215" height="37" viewBox="0 0 215 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="215" height="37" fill="#FFEDF5"/>
-                </svg>
-                <h1 className={"mb-3 " + utilStyles.headingH1}>About</h1>
+                </svg> */}
+                <h1 className={"mb-3 " + utilStyles.headingH1}><span id={"aboutHeaderID"}>About</span></h1>
             </div>
             
             <div className="mb-4">

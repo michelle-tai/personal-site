@@ -9,3 +9,15 @@
   bottom: 0;
   position: fixed;
 }
+
+.workHeader::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  left: 20px;
+  width: 180px;
+  height: 40px;
+  z-index: -1;
+  background: #edf4ff;
+}

@@ -53,6 +53,7 @@
 
 .headingH1 {
   font-size: 3.5rem;
+  position: relative;
 }
 
 .headingH2 {
@@ -113,12 +114,6 @@
   border-radius: 20px;
 }
 
-/* SVG */
-/* svg {
-  position: absolute;
-  z-index: -1;
-} */
-
 .svg-show {
   /* display: block; */
   -webkit-animation: fadeInFromNone 0.5s ease-out;
@@ -141,5 +136,23 @@
   100% {
     display: block;
     opacity: 1;
+  }
+}
+
+.bodyContent {
+  margin: auto;
+  max-width: 37em;
+  padding: 0 1em 1em 1em;
+}
+
+@media only screen and (max-width: 576px) {
+  .centerOnMobile {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .headingH1 {
+    font-size: 2.5rem;
   }
 }

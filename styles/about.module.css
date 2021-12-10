@@ -16,3 +16,15 @@
 #bottomRight {
   position: fixed;
 }
+
+.aboutHeader::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  left: 20px;
+  width: 215px;
+  height: 40px;
+  z-index: -1;
+  background: #ffedf5;
+}
