@@ -19,7 +19,7 @@ export default function Navigation(){
           </div>
         </a>
       </Link>
-      <Link href="/">
+      <Link href="/experimental">
         <a className="col-4 d-flex justify-content-end">
           <div id={styles.exp}>
             ???

@@ -1,3 +1,13 @@
+.homeContainer {
+  height: 90vh;
+  flex-direction: column;
+}
+
+.homeMainContent {
+  text-align: center;
+  padding: 0;
+}
+
 .memeshell:hover {
   color: #e8f1ff;
 }
@@ -39,6 +49,10 @@
   }
 }
 
-#te:hover {
-  color: lavender;
+@media only screen and (max-width: 550px) {
+  #content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 10px;
+  }
 }

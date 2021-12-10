@@ -44,8 +44,6 @@ export default function Work({allProjectsData}){
       <path d="M631.989 75.7487C554.445 -33.5347 410.298 -5.98707 215.816 52.5762C110.745 84.2154 -169.13 49.2213 -194.731 299.133C-214.811 495.149 442.837 316.356 536.127 266.386C611.033 246.668 709.534 185.032 631.989 75.7487Z" fill="#EDF4FF"/>
     </svg>
 
-
-
     <Layout>
       <div className={`mt-sm-4 ${utilStyles.bodyContent}`}>
         {/* <svg className={utilStyles.headingDiv} width="215" height="37" viewBox="0 0 215 37" fill="none" xmlns="http://www.w3.org/2000/svg">

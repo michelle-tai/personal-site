@@ -38,7 +38,8 @@ export default function InternshipProject({ projectData }) {
         {/* <Head>
           <title>{projectData.title}</title>
         </Head> */}
-        <article className={`${utilStyles.bodyContent}`} style={{backgroundColor: "white", borderRadius: "20px", padding: "20px 40px"}}>
+        <article className={`${utilStyles.bodyContent}`} style={{maxWidth:"40em"}}>
+          <div  style={{backgroundColor: "white", borderRadius: "20px", padding: "15px 20px"}}>
           <div className={utilStyles.centerOnMobile}>
             <div className={`mb-2 mt-2 ${utilStyles.lightText}`}>
               {`Work > Internship Projects > ${projectData.title}`}
@@ -59,6 +60,7 @@ export default function InternshipProject({ projectData }) {
             </div>
           </div>
           <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} /> 
+          </div>
         </article>
       </Layout>
       </>

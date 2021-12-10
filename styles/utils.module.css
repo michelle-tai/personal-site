@@ -60,22 +60,17 @@
   font-size: 1.5rem;
 }
 
-.homeContainer {
-  height: 93vh;
-  flex-direction: column;
-}
-
-.homeMainContent {
-  text-align: center;
-  /* height: 80vh; */
-  /* height: 500px; */
-  /* border: 3px solid black;  */
-}
-
 /***** SVG *****/
 .svgTL {
   left: 0;
   top: 0;
+}
+
+@media only screen and (max-width: 596px) {
+  #svgTLHome {
+    right: 0;
+    left: auto;
+  }
 }
 
 .svgTR {
@@ -91,6 +86,12 @@
 .svgBL {
   left: 0;
   bottom: 0;
+}
+@media only screen and (max-width: 818px) {
+  #svgBLHome {
+    right: 0;
+    left: auto;
+  }
 }
 
 .headingDiv {

@@ -22,6 +22,10 @@ export default function Layout({ children, home }) {
   const updateSVGs = () => {
     let allSVG = document.querySelectorAll('svg');
     allSVG.forEach( svg => {
+      // svg.style.overflow = "hidden";
+      if(svg.width > document.documentElement.clientWidth){
+        svg.width = document.documentElement.clientWidth
+      }
       if(colorify){
         svg.style.visibility = "visible";
         svg.classList.add("svg-show");
@@ -35,7 +39,7 @@ export default function Layout({ children, home }) {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
         <title>{siteTitle}</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />

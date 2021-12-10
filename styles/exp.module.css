@@ -1,32 +1,24 @@
-#rightBg {
-  right: 0;
-  top: 200px;
+#bottomRight {
   position: fixed;
 }
 
-#leftBg {
-  left: 0;
-  bottom: 0;
-  position: fixed;
-}
-
-.workHeader::after {
+.expHeader::after {
   content: "";
   display: inline-block;
   position: absolute;
   bottom: 2px;
   left: 20px;
-  width: 180px;
+  width: 450px;
   height: 40px;
   z-index: -1;
-  background: #edf4ff;
+  background: #e8ffe5;
 }
 
 @media only screen and (max-width: 767px) {
-  .workHeader::after {
+  .expHeader::after {
     bottom: 2px;
     left: 20px;
-    width: 120px;
+    width: 320px;
     height: 30px;
     z-index: -1;
   }

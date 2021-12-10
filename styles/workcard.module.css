@@ -51,3 +51,9 @@
     min-height: 300px;
   }
 }
+
+@media only screen and (max-width: 365px) {
+  #fullWorkCard {
+    width: 100%;
+  }
+}

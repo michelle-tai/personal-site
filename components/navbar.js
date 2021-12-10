@@ -5,14 +5,14 @@ import Navigation from './navigation'
 
 export default function Navbar(){
   return(
-    <header className="container-fluid ps-sm-5 pe-sm-5 pt-sm-4">
+    <header id={styles.navBarID} className="container-fluid ps-sm-5 ps-3 pe-sm-5 pe-2 pt-sm-4 pt-2 mt-sm-0 mb-sm-0 mt-2 mb-3">
       <div className="row justify-content-between align-items-center">
         <Link href="/">
-          <a id={styles.logo} className="col-2">
+          <a id={styles.logo} className="col-sm-2 col-12">
             <span>meme.</span>
           </a>
         </Link>
-        <div className="col-md-6 col-lg-5 col-sm-8">
+        <div className="col-md-6 col-lg-5 col-sm-8 col-12">
           <Navigation />
         </div>
       </div>

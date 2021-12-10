@@ -45,3 +45,9 @@
 #work,
 #exp {
 }
+
+@media only screen and (max-width: 450px) {
+  #navBarID {
+    text-align: center;
+  }
+}
