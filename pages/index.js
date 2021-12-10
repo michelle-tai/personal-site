@@ -42,7 +42,7 @@ export default function Home() {
           <div className={`row ${utilStyles.temp}`}>
             <main className={`container d-flex ${homeStyle.homeMainContent}`}>
               <div className={`col align-self-center`}>
-                <div id={homeStyle.content} className="mb-3">
+                <div id={homeStyle.content} className="mb-4">
                 <div className={`row align-items-center mb-3`}>
                     <h1 className={utilStyles.headingH1}>Hi, I'm <span style={{position: "relative"}}><span id="memeshellID">memeshell</span></span>.</h1>
                 </div>
@@ -51,7 +51,7 @@ export default function Home() {
                         Avid animal-lover. Mediocre handcrafter. Nap afficionado.
                 </div>
                 </div>
-                <Navigation className="mt-2"/>
+                <Navigation className="mt-sm-4 mt-2"/>
               </div>
             </main>
           </div>
