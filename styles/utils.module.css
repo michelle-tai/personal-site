@@ -64,33 +64,39 @@
 .svgTL {
   left: 0;
   top: 0;
+  visibility: none;
 }
 
 @media only screen and (max-width: 596px) {
   #svgTLHome {
     right: 0;
     left: auto;
+    visibility: none;
   }
 }
 
 .svgTR {
   right: 0;
   top: 0;
+  visibility: none;
 }
 
 .svgBR {
   right: 0;
   bottom: 0;
+  visibility: none;
 }
 
 .svgBL {
   left: 0;
   bottom: 0;
+  visibility: none;
 }
 @media only screen and (max-width: 818px) {
   #svgBLHome {
     right: 0;
     left: auto;
+    visibility: none;
   }
 }
 
